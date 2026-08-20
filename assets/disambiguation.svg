@@ -1,0 +1,51 @@
+<svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="320" fill="#141821"/>
+  <text x="450" y="34" fill="#eef1f6" font-size="18" text-anchor="middle" font-weight="bold">Why three extra classifiers?</text>
+  <text x="450" y="56" fill="#8b93a7" font-size="12.5" text-anchor="middle">Some fingerspelled letters look almost identical to the base CNN, so each group gets its own specialist model.</text>
+
+  <!-- Group 1 -->
+  <g>
+    <rect x="40" y="90" width="250" height="180" rx="12" fill="#1d2330" stroke="#2a9d76" stroke-width="1.5"/>
+    <text x="165" y="120" fill="#3ddc97" font-size="15" text-anchor="middle" font-weight="bold">Group DRU</text>
+    <circle cx="90" cy="160" r="26" fill="#141821" stroke="#3ddc97"/>
+    <text x="90" y="166" fill="#eef1f6" font-size="18" text-anchor="middle">D</text>
+    <circle cx="165" cy="160" r="26" fill="#141821" stroke="#3ddc97"/>
+    <text x="165" y="166" fill="#eef1f6" font-size="18" text-anchor="middle">R</text>
+    <circle cx="240" cy="160" r="26" fill="#141821" stroke="#3ddc97"/>
+    <text x="240" y="166" fill="#eef1f6" font-size="18" text-anchor="middle">U</text>
+    <text x="165" y="220" fill="#8b93a7" font-size="12" text-anchor="middle">similar upright</text>
+    <text x="165" y="236" fill="#8b93a7" font-size="12" text-anchor="middle">finger position</text>
+  </g>
+
+  <!-- Group 2 -->
+  <g>
+    <rect x="325" y="90" width="250" height="180" rx="12" fill="#1d2330" stroke="#2a9d76" stroke-width="1.5"/>
+    <text x="450" y="120" fill="#3ddc97" font-size="15" text-anchor="middle" font-weight="bold">Group TKDI</text>
+    <circle cx="375" cy="160" r="24" fill="#141821" stroke="#3ddc97"/>
+    <text x="375" y="166" fill="#eef1f6" font-size="16" text-anchor="middle">T</text>
+    <circle cx="425" cy="160" r="24" fill="#141821" stroke="#3ddc97"/>
+    <text x="425" y="166" fill="#eef1f6" font-size="16" text-anchor="middle">K</text>
+    <circle cx="475" cy="160" r="24" fill="#141821" stroke="#3ddc97"/>
+    <text x="475" y="166" fill="#eef1f6" font-size="16" text-anchor="middle">D</text>
+    <circle cx="525" cy="160" r="24" fill="#141821" stroke="#3ddc97"/>
+    <text x="525" y="166" fill="#eef1f6" font-size="16" text-anchor="middle">I</text>
+    <text x="450" y="220" fill="#8b93a7" font-size="12" text-anchor="middle">overlapping thumb</text>
+    <text x="450" y="236" fill="#8b93a7" font-size="12" text-anchor="middle">and knuckle shapes</text>
+  </g>
+
+  <!-- Group 3 -->
+  <g>
+    <rect x="610" y="90" width="250" height="180" rx="12" fill="#1d2330" stroke="#2a9d76" stroke-width="1.5"/>
+    <text x="735" y="120" fill="#3ddc97" font-size="15" text-anchor="middle" font-weight="bold">Group SMN</text>
+    <circle cx="685" cy="160" r="26" fill="#141821" stroke="#3ddc97"/>
+    <text x="685" y="166" fill="#eef1f6" font-size="18" text-anchor="middle">S</text>
+    <circle cx="760" cy="160" r="26" fill="#141821" stroke="#3ddc97"/>
+    <text x="760" y="166" fill="#eef1f6" font-size="18" text-anchor="middle">M</text>
+    <circle cx="835" cy="160" r="26" fill="#141821" stroke="#3ddc97"/>
+    <text x="835" y="166" fill="#eef1f6" font-size="18" text-anchor="middle">N</text>
+    <text x="735" y="220" fill="#8b93a7" font-size="12" text-anchor="middle">closed-fist</text>
+    <text x="735" y="236" fill="#8b93a7" font-size="12" text-anchor="middle">variants</text>
+  </g>
+
+  <text x="450" y="300" fill="#8b93a7" font-size="12.5" text-anchor="middle">When the base model lands on a letter from one of these sets, its dedicated classifier re-checks just that set.</text>
+</svg>

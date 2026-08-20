@@ -1,0 +1,6 @@
+numpy
+opencv-python
+tensorflow
+tf_keras
+pillow
+pyspellchecker

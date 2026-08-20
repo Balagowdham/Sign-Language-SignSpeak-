@@ -1,0 +1,53 @@
+<svg viewBox="0 0 980 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3ddc97"/>
+    </marker>
+  </defs>
+
+  <rect width="980" height="260" fill="#141821"/>
+
+  <!-- Stage boxes -->
+  <g>
+    <!-- 1 Camera -->
+    <rect x="20" y="90" width="150" height="80" rx="10" fill="#1d2330" stroke="#2a9d76" stroke-width="1.5"/>
+    <text x="95" y="123" fill="#8b93a7" font-size="11" text-anchor="middle">STEP 1</text>
+    <text x="95" y="145" fill="#eef1f6" font-size="15" text-anchor="middle" font-weight="bold">Webcam frame</text>
+
+    <!-- 2 ROI -->
+    <rect x="205" y="90" width="150" height="80" rx="10" fill="#1d2330" stroke="#2a9d76" stroke-width="1.5"/>
+    <text x="280" y="123" fill="#8b93a7" font-size="11" text-anchor="middle">STEP 2</text>
+    <text x="280" y="145" fill="#eef1f6" font-size="15" text-anchor="middle" font-weight="bold">Hand ROI crop</text>
+
+    <!-- 3 Preprocess -->
+    <rect x="390" y="90" width="170" height="80" rx="10" fill="#1d2330" stroke="#2a9d76" stroke-width="1.5"/>
+    <text x="475" y="115" fill="#8b93a7" font-size="11" text-anchor="middle">STEP 3</text>
+    <text x="475" y="136" fill="#eef1f6" font-size="14" text-anchor="middle" font-weight="bold">Gray + blur +</text>
+    <text x="475" y="153" fill="#eef1f6" font-size="14" text-anchor="middle" font-weight="bold">adaptive threshold</text>
+
+    <!-- 4 CNN stage 1 -->
+    <rect x="595" y="90" width="160" height="80" rx="10" fill="#1d2330" stroke="#3ddc97" stroke-width="2"/>
+    <text x="675" y="115" fill="#8b93a7" font-size="11" text-anchor="middle">STEP 4</text>
+    <text x="675" y="136" fill="#eef1f6" font-size="14" text-anchor="middle" font-weight="bold">CNN — 27 class</text>
+    <text x="675" y="153" fill="#eef1f6" font-size="14" text-anchor="middle" font-weight="bold">(A-Z + blank)</text>
+
+    <!-- 5 Disambiguation -->
+    <rect x="790" y="90" width="170" height="80" rx="10" fill="#1d2330" stroke="#3ddc97" stroke-width="2"/>
+    <text x="875" y="115" fill="#8b93a7" font-size="11" text-anchor="middle">STEP 5</text>
+    <text x="875" y="136" fill="#eef1f6" font-size="14" text-anchor="middle" font-weight="bold">3 focused CNNs</text>
+    <text x="875" y="153" fill="#eef1f6" font-size="14" text-anchor="middle" font-weight="bold">for lookalike letters</text>
+  </g>
+
+  <!-- Arrows -->
+  <line x1="170" y1="130" x2="200" y2="130" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="355" y1="130" x2="385" y2="130" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="560" y1="130" x2="590" y2="130" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="755" y1="130" x2="785" y2="130" stroke="#3ddc97" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Bottom caption row -->
+  <text x="490" y="215" fill="#8b93a7" font-size="13" text-anchor="middle">
+    Stable output over consecutive frames is appended to the current word, then the current sentence.
+  </text>
+
+  <text x="490" y="30" fill="#eef1f6" font-size="18" text-anchor="middle" font-weight="bold">Recognition pipeline</text>
+</svg>
