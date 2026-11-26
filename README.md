@@ -108,7 +108,3 @@ On the held-out test set, the base classifier alone lands around **95.8%**. Laye
 - Recognition quality depends heavily on lighting and background — the thresholding step assumes a reasonably uncluttered background behind the hand.
 - This covers fingerspelling only. Full ASL involves facial expression, motion, and non-manual markers that aren't modeled here.
 - The training data was self-collected, so performance may not generalize evenly across different hands, skin tones, or lighting setups. Treat this as a learning/portfolio project, not a validated accessibility product.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
